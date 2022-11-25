@@ -1,0 +1,15 @@
+{
+  "name": "islandora/islandora_derivatives_core",
+  "type": "drupal-module",
+  "description": "Foundations for derivative generation through Actions.",
+  "keywords": [
+    "Drupal"
+  ],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/rosiel/islandora_derivatives_core",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/islandora_fits",
+    "source": "http://cgit.drupalcode.org/islandora_fits"
+  }
+}
