@@ -1,0 +1,6 @@
+# Menu list of Huacaya configuration forms
+system.huacaya_config:
+  title: Huacaya settings
+  parent: system.admin_config_services
+  route_name: system.huacaya_settings
+  weight: 100

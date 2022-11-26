@@ -1,0 +1,18 @@
+# Huacaya Services
+# huacaya.services.yml:
+services:
+  huacaya.stomp:
+    class: Stomp\StatefulStomp
+    factory: [ 'Drupal\huacaya\StompFactory', create ]
+    arguments: [ '@config.factory' ]
+  huacaya.stomp.auth_header_listener:
+    class: Drupal\huacaya\EventSubscriber\StompHeaderEventSubscriber
+    arguments: [ '@jwt.authentication.jwt' ]
+    tags:
+      - { name: event_subscriber }
+  huacaya.eventgenerator:
+    class: Drupal\huacaya\EventGenerator\EventGenerator
+    arguments: ['@islandora.utils', '@islandora.media_source_service']
+  huacaya.media_source_service:
+    class: Drupal\huacaya\MediaSource\MediaSourceService
+    arguments: [ '@entity_type.manager', '@current_user', '@language_manager', '@file_system' ]

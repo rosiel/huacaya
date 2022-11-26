@@ -1,5 +1,0 @@
-name: 'Islandora Derivatives Core'
-type: module
-description: 'Foundations for creating derivative files through Actions.'
-core_version_requirement: ^9 || ^10
-package: 'Islandora'

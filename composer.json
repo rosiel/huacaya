@@ -1,15 +1,15 @@
 {
-  "name": "islandora/islandora_derivatives_core",
+  "name": "islandora/huacaya",
   "type": "drupal-module",
-  "description": "Foundations for derivative generation through Actions.",
+  "description": "Send messages to a queue, to be handled by Alpaca.",
   "keywords": [
     "Drupal"
   ],
   "license": "GPL-2.0+",
-  "homepage": "https://github.com/rosiel/islandora_derivatives_core",
+  "homepage": "https://github.com/rosiel/huacaya",
   "minimum-stability": "dev",
   "support": {
-    "issues": "https://www.drupal.org/project/issues/islandora_fits",
-    "source": "http://cgit.drupalcode.org/islandora_fits"
+    "issues": "https://github.com/rosiel/huacaya/issues",
+    "source": "http://github.com/rosiel/huacaya"
   }
 }

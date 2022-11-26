@@ -1,0 +1,8 @@
+# Huacaya configuration form
+system.huacaya_settings:
+  path: '/admin/config/huacaya/core'
+  defaults:
+    _form: '\Drupal\huacaya\Form\HuacayaSettingsForm'
+    _title: 'Huacaya Settings'
+  requirements:
+    _permission: 'administer site configuration'

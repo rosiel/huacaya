@@ -1,0 +1,10 @@
+huacaya.settings:
+  type: config_object
+  label: 'Huacaya Settings'
+  mapping:
+    broker_url:
+      type: string
+      label: 'Url to connect to message broker'
+    jwt_expiry:
+      type: string
+      label: 'How long JWTs should last before expiring.'
