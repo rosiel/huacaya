@@ -3,3 +3,5 @@ type: module
 description: 'Send messages to a queue handled by Alpaca.'
 core_version_requirement: ^9 || ^10
 package: 'Islandora'
+dependencies:
+  - jwt:jwt

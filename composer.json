@@ -11,5 +11,8 @@
   "support": {
     "issues": "https://github.com/rosiel/huacaya/issues",
     "source": "http://github.com/rosiel/huacaya"
+  },
+  "require": {
+    "drupal/jwt": "^1.0"
   }
 }
