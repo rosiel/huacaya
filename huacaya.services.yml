@@ -12,7 +12,10 @@ services:
       - { name: event_subscriber }
   huacaya.eventgenerator:
     class: Drupal\huacaya\EventGenerator\EventGenerator
-    arguments: ['@islandora.utils', '@islandora.media_source_service']
+    arguments: ['@huacaya.utils', '@huacaya.media_source_service']
   huacaya.media_source_service:
     class: Drupal\huacaya\MediaSource\MediaSourceService
     arguments: [ '@entity_type.manager', '@current_user', '@language_manager', '@file_system' ]
+  huacaya.utils:
+    class: Drupal\huacaya\HuacayaUtils
+    arguments: [ '@language_manager' ]

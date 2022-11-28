@@ -59,9 +59,9 @@ class MediaSourceService {
    */
   public function __construct(
     EntityTypeManagerInterface $entity_type_manager,
-    AccountInterface           $account,
-    LanguageManagerInterface   $language_manager,
-    FileSystemInterface        $file_system
+    AccountInterface $account,
+    LanguageManagerInterface $language_manager,
+    FileSystemInterface $file_system
   ) {
     $this->entityTypeManager = $entity_type_manager;
     $this->account = $account;
@@ -146,8 +146,7 @@ class MediaSourceService {
     // Set fields provided by type plugin and mapped in bundle configuration
     // for the media.
     foreach ($media->bundle->entity->getFieldMap() as $source => $destination) {
-      if ($media->hasField($destination) && $value = $media->getSource()
-          ->getMetadata($media, $source)) {
+      if ($media->hasField($destination) && $value = $media->getSource()->getMetadata($media, $source)) {
         $media->set($destination, $value);
       }
       // Ensure width and height are updated on File reference when it's an

@@ -3,7 +3,6 @@
 namespace Drupal\huacaya\EventSubscriber;
 
 use Drupal\huacaya\Form\HuacayaSettingsForm;
-use Drupal\islandora\Form\IslandoraSettingsForm;
 use Drupal\jwt\Authentication\Event\JwtAuthValidateEvent;
 use Drupal\jwt\Authentication\Event\JwtAuthValidEvent;
 use Drupal\jwt\Authentication\Event\JwtAuthGenerateEvent;

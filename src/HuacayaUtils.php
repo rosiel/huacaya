@@ -59,6 +59,7 @@ class HuacayaUtils {
   public function getDownloadUrl(FileInterface $file) {
     return $file->createFileUrl(FALSE);
   }
+
   /**
    * Gets the URL for an entity's REST endpoint.
    *
@@ -83,4 +84,5 @@ class HuacayaUtils {
     }
     return $rest_url;
   }
+
 }

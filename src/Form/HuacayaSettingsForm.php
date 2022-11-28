@@ -162,7 +162,7 @@ class HuacayaSettingsForm extends ConfigFormBase {
       $stomp->subscribe('dummy-queue-for-validation');
       $stomp->unsubscribe();
     }
-      // Invalidate the form if there's an issue.
+    // Invalidate the form if there's an issue.
     catch (StompException $e) {
       $form_state->setErrorByName(
         self::BROKER_URL,
