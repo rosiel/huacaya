@@ -66,7 +66,7 @@ class MediaSourceController extends ControllerBase {
   /**
    * Adds file to existing media.
    *
-   * @param Drupal\media\Entity\Media $media
+   * @param \Drupal\media\Entity\Media $media
    *   The media to which file is added.
    * @param string $destination_field
    *   The name of the media field to add file reference.

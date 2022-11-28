@@ -1,6 +1,12 @@
 # Huacaya Services
 # huacaya.services.yml:
 services:
+  huacaya.jwt-subscriber:
+    class: Drupal\huacaya\EventSubscriber\JwtEventSubscriber
+    factory: [ 'Drupal\huacaya\EventSubscriber\JwtEventSubscriber', create ]
+    arguments: [ '@entity_type.manager', '@current_user' ]
+    tags:
+      - { name: event_subscriber }
   huacaya.stomp:
     class: Stomp\StatefulStomp
     factory: [ 'Drupal\huacaya\StompFactory', create ]
