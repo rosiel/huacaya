@@ -22,6 +22,9 @@ services:
   huacaya.media_source_service:
     class: Drupal\huacaya\MediaSource\MediaSourceService
     arguments: [ '@entity_type.manager', '@current_user', '@language_manager', '@file_system' ]
+  logger.channel.huacaya:
+    parent: logger.channel_base
+    arguments: [ 'huacaya' ]
   huacaya.utils:
     class: Drupal\huacaya\HuacayaUtils
     arguments: [ '@language_manager' ]

@@ -135,7 +135,7 @@ abstract class EmitEvent extends ConfigurableActionBase implements ContainerFact
       $container->get('huacaya.stomp'),
       $container->get('messenger'),
       $container->get('event_dispatcher'),
-      $container->get('logger.channel.islandora')
+      $container->get('logger.channel.huacaya')
     );
   }
 

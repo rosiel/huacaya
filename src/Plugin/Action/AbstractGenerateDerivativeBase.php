@@ -155,7 +155,7 @@ class AbstractGenerateDerivativeBase extends EmitEvent {
           $container->get('config.factory'),
           $container->get('entity_field.manager'),
           $container->get('event_dispatcher'),
-          $container->get('logger.channel.islandora')
+          $container->get('logger.channel.huacaya')
       );
   }
 
